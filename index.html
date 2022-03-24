@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <form class="search-form">
+          <input
+            type="text"
+            name="buscar"
+            class="search-input"
+            placeholder="Busca productos y más..."
+          />
+          <button class="search-button">Buscar</button>
+        </form>
+      </div>
+    </header>
+
+    <div class="content">
+      <h3 class="result">Resultados: <span class="results-count"></span></h3>
+      <div class="results"></div>
+    </div>
+    <template id="result-item-template">
+      <div class="result-item">
+        <img
+          src="https://picsum.photos/148/140"
+          alt=""
+          class="result-item-img"
+        />
+        <div class="result-item-content">
+          <h4 class="result-item-title">título</h4>
+          <p class="result-item-condition">condition</p>
+          <p class="result-item-sell-count">
+            Vendidos: <span class="result-item-sell-count-num"></span>
+          </p>
+        </div>
+        <div class="result-item-price">$1111</div>
+      </div></template
+    >
+  </body>
+</html>

@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #fff159;
+  height: 80px;
+  width: 100%;
+  padding: 10px 2%;
+}
+
+.header-content {
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-input {
+  flex-grow: 1;
+  margin-right: 2%;
+  padding-left: 2%;
+  border-color: solid 1px;
+  border-radius: 4px;
+  min-width: 50%;
+}
+
+.search-button {
+  padding: 13px 5%;
+  border-color: solid 1px;
+  border-radius: 4px;
+}
+
+.content {
+  max-width: 810px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 2%;
+}
+
+.result-item {
+  border: solid 1px;
+  border-radius: 4px;
+  display: flex;
+  padding: 15px 2%;
+  margin-bottom: 15px;
+  gap: 2%;
+}
+@media (max-width: 470px) {
+  .result-item {
+    display: block;
+  }
+}
+
+.result-item-img {
+  width: 100%;
+  max-width: 148px;
+  min-width: 148px;
+  height: 154px;
+  align-self: center;
+}
+@media (max-width: 470px) {
+  .result-item-img {
+    display: block;
+    margin: 0 auto 15px;
+  }
+}
+
+.result-item-content {
+  flex-grow: 1;
+}
+@media (max-width: 470px) {
+  .result-item-content-container {
+    display: flex;
+  }
+}
+
+.result-item-title {
+  margin: 0;
+  font-weight: 700;
+}
+@media (max-width: 470px) {
+  .result-item-title {
+    text-align: center;
+  }
+}
+
+.result-item-condition {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 4px;
+}
+@media (max-width: 470px) {
+  .result-item-condition {
+    display: none;
+  }
+}
+
+.result-item-sell-count {
+  margin: 55px 0 0 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 470px) {
+  .result-item-sell-count {
+    margin: 0;
+    position: relative;
+    top: 30px;
+  }
+}
+
+.result-item-sell-count-num {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.result-item-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #5791a4;
+  align-self: center;
+}
+@media (max-width: 470px) {
+  .result-item-price {
+    text-align: end;
+  }
+}
